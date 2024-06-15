@@ -11,7 +11,6 @@ export const JumboApp = () => {
                 buttonURL=""
                 buttonLabel="Discover More!"
                 backgroundURL="https://www.bates.edu/wordpress/files/2016/07/gradient4.jpg"
-                
             />
         </div>
     )
