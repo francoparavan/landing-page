@@ -2,7 +2,7 @@ import React from 'react';
 import { Jumbotron } from "./jumbotron";
 import 'bootstrap/dist/css/bootstrap.min.css';
 
-export const JumboApp = () => {
+const JumboApp = () => {
     return (
         <div>
             <Jumbotron
@@ -15,3 +15,4 @@ export const JumboApp = () => {
         </div>
     )
 }
+export default JumboApp;

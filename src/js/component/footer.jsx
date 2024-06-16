@@ -1,10 +1,10 @@
 import React from 'react';
 
-export const Foot = (props) => {
+const Footer = () => {
     return (
-        <div class="card-footer bg-dark text-white text-center">
-            Copyright &copy; Your Website 2024
+        <div class="card-footer bg-dark text-white text-center" id="foot">
+            Copyright &copy; 2024 AdventureSphere. All rights reserved.
         </div>
     )
 }
-
+export default Footer;

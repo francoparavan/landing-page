@@ -1,3 +1,4 @@
+//import react into the bundle
 import React from "react";
 import ReactDOM from "react-dom";
 
@@ -7,19 +8,10 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import 'bootstrap/dist/js/bootstrap.bundle';
 
 //import your own components
-import { Navbar } from "./component/navbar";
-import { App } from "./component/cards";
-import { Foot } from "./component/footer";
-import { JumboApp } from "./component/jumbo";
+import Home from "./component/home"
 
 //render your react application
 ReactDOM.render(
-    <>
-        <Navbar />
-        <JumboApp />
-        <App />
-        <Foot />
-    </>,
-    document.querySelector('#app')
-);
-    
+    <Home />
+    ,
+    document.querySelector("#app"));

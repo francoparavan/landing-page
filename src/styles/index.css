@@ -20,13 +20,10 @@ h1.display-3 {
   }
 
 .card-footer {
-  margin-top: 1.5rem;
+  /* margin-top: 1.5rem; */
+  margin-top: auto;
   padding:20px !important;
 }
 
-body {
-  background-image: url('https://cdn.naturettl.com/wp-content/uploads/2020/04/25152036/how-to-find-great-locations-for-landscape-photography-11-1024x683.jpg'); 
-  background-size: cover; 
-  background-repeat: no-repeat; 
-}
+
 
