@@ -10,10 +10,10 @@ import bg from "../../img/bgBody.png"
 const Home = () => {
 	return (
 		 <section style={{ backgroundImage: `url(${bg})`, backgroundSize: "cover", backgroundRepeat: "no-repeat"}}>
-            <Navbar />,
-            <JumboApp />,
-            <CardsApp />,
-            <Footer />,
+            <Navbar />
+            <JumboApp />
+            <CardsApp />
+            <Footer />
 		 </section>
     )
 }
