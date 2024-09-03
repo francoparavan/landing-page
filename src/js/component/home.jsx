@@ -4,6 +4,8 @@ import Navbar from "./navbar";
 import CardsApp  from "./cards";
 import Footer  from "./footer";
 import JumboApp  from "./jumbo";
+import Contact  from "./contact";
+import About  from "./aboutUs";
 import bg from "../../img/bgBody.png"
 
 
@@ -13,6 +15,8 @@ const Home = () => {
             <Navbar />
             <JumboApp />
             <CardsApp />
+            <About />
+            <Contact />
             <Footer />
 		 </section>
     )
