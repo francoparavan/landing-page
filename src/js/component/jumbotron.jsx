@@ -1,29 +1,36 @@
 import React from "react";
-import PropTypes from 'prop-types';
+import PropTypes from "prop-types";
 
 export const Jumbotron = (props) => {
   return (
     <div className="container">
-      <div className="p-5 my-5 bg-body-tertiary rounded-3" style={{
-        backgroundImage: `url(${props.backgroundURL})`,
-        backgroundSize: 'cover',
-        height: '300px',
-      }}>
-        <div className="container-fluid py-5">
-          <h1 className="display-3 fw-semibold">{props.title}</h1>
-          <p className="col-md-12 fs-6" style={{
-            color: 'white'
-          }}>
+      <div
+        className="p-5 my-5 bg-body-tertiary rounded-3 d-flex align-items-center"
+        style={{
+          backgroundImage: `url(${props.backgroundURL})`,
+          backgroundSize: "cover",
+          backgroundPosition: "center",
+          minHeight: "300px",
+        }}
+      >
+        <div className="container-fluid py-5 text-center text-md-start">
+          <h1 className="display-3 fw-semibold mb-3">{props.title}</h1>
+          <p
+            className="fs-6"
+            style={{
+              color: "white",
+            }}
+          >
             {props.description}
           </p>
-          <button className="btn btn-warning btn-lg mt-5" type="button">
-            <a href={props.buttonURL} className="btn btn-warning btn-lg"><b>{props.buttonLabel}</b></a>
-          </button>
+          <a href={props.buttonURL} className="btn btn-warning btn-lg mt-3">
+            <b>{props.buttonLabel}</b>
+          </a>
         </div>
       </div>
     </div>
-  )
-}
+  );
+};
 
 Jumbotron.propTypes = {
   title: PropTypes.string,
@@ -33,23 +40,3 @@ Jumbotron.propTypes = {
   buttonLabel: PropTypes.string,
   backgroundURL: PropTypes.string,
 };
-
-
-
-
-// export const Jumbotron = () => {
-//   return (
-//     <div className="container">
-//       <div className="p-5 mb-4 mt-4 bg-body-tertiary rounded-3" style={{ 
-//         backgroundImage: 'url("https://www.bates.edu/wordpress/files/2016/07/gradient4.jpg")',
-//         backgroundSize: 'cover',
-//       }}>
-//         <div className="container-fluid py-5">
-//           <h1 className="display-3 fw-semibold">Custom jumbotron</h1>
-//           <p className="col-md-12 fs-6">Using a series of utilities, you can create this jumbotron, just like the one in previous versions of Bootstrap. Check out the examples below for how you can remix and restyle it to your liking.</p>
-//           <button className="btn btn-warning btn-lg" type="button">Example button</button>
-//         </div>
-//       </div>
-//     </div>
-//   )
-// }
