@@ -3,7 +3,7 @@ import backgnd from '../../img/backgnd.png';
 
 const About = () => {
     return (
-        <div className="container p-2 mt-5" id="aboutus">
+        <div className="container p-2 my-5" id="aboutus">
             <div className="bg-body-tertiary rounded-3" 
                  style={{ 
                      backgroundImage: `url(${backgnd})`, 
