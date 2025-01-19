@@ -5,7 +5,7 @@ export const Jumbotron = (props) => {
   return (
     <div className="container">
       <div
-        className="p-5 my-5 bg-body-tertiary rounded-3 d-flex align-items-center"
+        className="p-5 my-5 bg-body-tertiary rounded-3 d-flex justify-content-center flex-column"
         style={{
           backgroundImage: `url(${props.backgroundURL})`,
           backgroundSize: "cover",
@@ -13,19 +13,27 @@ export const Jumbotron = (props) => {
           minHeight: "300px",
         }}
       >
-        <div className="container-fluid py-5 text-center text-md-start">
-          <h1 className="display-3 fw-semibold mb-3">{props.title}</h1>
+        <div
+          className="d-flex flex-column align-items-center justify-content-center"
+          style={{
+            height: "100%",
+          }}
+        >
+          <h1 className="display-3 fw-semibold mb-3 text-center mt-2">{props.title}</h1>
           <p
-            className="fs-6"
+            className="text-center"
             style={{
               color: "white",
+              fontSize: "20px",
             }}
           >
             {props.description}
           </p>
-          <a href={props.buttonURL} className="btn btn-warning btn-lg mt-3">
-            <b>{props.buttonLabel}</b>
-          </a>
+          <div className="mt-4">
+            <a href={props.buttonURL} className="btn btn-warning btn-lg">
+              <b>{props.buttonLabel}</b>
+            </a>
+          </div>
         </div>
       </div>
     </div>
