@@ -1,6 +1,8 @@
-import React from "react";
+import React, { useState } from "react";
 
 const Contact = () => {
+    const [isHovered, setIsHovered] = useState(false);
+
     return (
         <div className="container py-3">
             <form className="bg-dark text-white p-4 rounded-3" id="contact">
@@ -12,20 +14,24 @@ const Contact = () => {
                     <input type="text" className="form-control" />
                     <div className="form-text" style={{ color: "#6c757d" }}>Insert your full name in the field above</div>
                 </div>
-
                 <div className="mb-3">
                     <label className="form-label">Email address:</label>
                     <input type="email" className="form-control" />
                     <div className="form-text" style={{ color: "#6c757d" }}>Insert your email in the field above</div>
                 </div>
-
                 <div className="mb-3">
                     <label className="form-label">Message:</label>
                     <textarea className="form-control" rows="4"></textarea>
                     <div className="form-text" style={{ color: "#6c757d" }}>Write your message here</div>
                 </div>
-
-                <button type="submit" className="btn btn-secondary">Submit</button>
+                <button
+                    type="submit"
+                    className={`btn ${isHovered ? "btn-primary" : "btn-secondary"}`}
+                    onMouseEnter={() => setIsHovered(true)}
+                    onMouseLeave={() => setIsHovered(false)}
+                >
+                    Submit
+                </button>
             </form>
         </div>
     );
